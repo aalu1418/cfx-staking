@@ -1,10 +1,16 @@
-import StakeMenu from './stakeMenu/stakeMenu'
-import './App.css';
+import React from "react";
+import StakeMenu from "./stakeMenu/stakeMenu";
+import Nav from "./nav/nav";
+import "./App.css";
 
 function App() {
+  const [value, set] = React.useState(false);
+  const connected = { value, set };
+
   return (
     <div className="App">
-      <StakeMenu />
+      <Nav connected={connected} />
+      <StakeMenu connected={connected} />
     </div>
   );
 }

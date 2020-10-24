@@ -1,0 +1,50 @@
+.Nav {
+  min-height: 3rem;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Nav-Button {
+  width: 12rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(195, 197, 203);
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  border: 2px solid #453b88;
+  background-color: #453b88;
+  outline: none;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav-Button:active {
+  background-color: #292351;
+}
+
+.Nav-Button-Dot {
+  min-height: 10px;
+  min-width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.Nav-Button-Text {
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Red {
+  background-color: #7f0000;
+}

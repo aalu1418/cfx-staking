@@ -1,9 +1,6 @@
 .StakeMenu {
-  font-weight: 500;
-  font-size: 1rem;
-  color: rgb(195, 197, 203);
   background-color: rgb(33, 36, 41);
-  width: 100%;
+  width: 75%;
   max-width: 420px;
   padding: 1rem;
   border-radius: 2rem;
@@ -45,6 +42,7 @@
   align-items: center;
   margin: 0.75rem 0.75rem 0.75rem 1rem;
   box-sizing: border-box;
+  min-width: 1rem;
 }
 
 .StakeMenu-Input-Token {
@@ -53,6 +51,7 @@
   align-items: center;
   font-weight: 500;
   font-size: 1.5rem;
+  padding-right: 1rem;
 }
 
 .StakeMenu-Logo {
@@ -82,11 +81,11 @@
 }
 
 .StakeMenu-Button.Left {
-  left: 1.5rem;
+  left: 8%;
 }
 
 .StakeMenu-Button.Right {
-  right: 1.5rem;
+  right: 8%;
 }
 
 .Active {
