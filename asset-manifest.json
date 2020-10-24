@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cfx-staking/static/css/main.3c686bcf.chunk.css",
+    "main.js": "/cfx-staking/static/js/main.284424dd.chunk.js",
+    "main.js.map": "/cfx-staking/static/js/main.284424dd.chunk.js.map",
+    "runtime-main.js": "/cfx-staking/static/js/runtime-main.e6d74cd2.js",
+    "runtime-main.js.map": "/cfx-staking/static/js/runtime-main.e6d74cd2.js.map",
+    "static/js/2.65a83e3e.chunk.js": "/cfx-staking/static/js/2.65a83e3e.chunk.js",
+    "static/js/2.65a83e3e.chunk.js.map": "/cfx-staking/static/js/2.65a83e3e.chunk.js.map",
+    "static/js/3.a2b3e0b6.chunk.js": "/cfx-staking/static/js/3.a2b3e0b6.chunk.js",
+    "static/js/3.a2b3e0b6.chunk.js.map": "/cfx-staking/static/js/3.a2b3e0b6.chunk.js.map",
+    "index.html": "/cfx-staking/index.html",
+    "static/css/main.3c686bcf.chunk.css.map": "/cfx-staking/static/css/main.3c686bcf.chunk.css.map",
+    "static/js/2.65a83e3e.chunk.js.LICENSE.txt": "/cfx-staking/static/js/2.65a83e3e.chunk.js.LICENSE.txt",
+    "static/media/cfx_logo.f0e157f6.svg": "/cfx-staking/static/media/cfx_logo.f0e157f6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6d74cd2.js",
+    "static/js/2.65a83e3e.chunk.js",
+    "static/css/main.3c686bcf.chunk.css",
+    "static/js/main.284424dd.chunk.js"
+  ]
+}
