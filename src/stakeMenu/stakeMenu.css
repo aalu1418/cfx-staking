@@ -1,0 +1,126 @@
+.StakeMenu {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(195, 197, 203);
+  background-color: rgb(33, 36, 41);
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 4px 8px,
+    rgba(0, 0, 0, 0.04) 0px 16px 24px, rgba(0, 0, 0, 0.01) 0px 24px 32px;
+}
+
+.StakeMenu-Input-Container {
+  border-radius: 1.5rem;
+  border: 1px solid rgb(44, 47, 54);
+  background-color: rgb(33, 36, 41);
+  margin-bottom: 1rem;
+}
+
+.StakeMenu-Input-Label {
+  line-height: 1rem;
+  padding: 0.75rem 1rem 0px;
+  text-align: left;
+}
+
+.StakeMenu-Input {
+  display: flex;
+  flex-direction: row;
+}
+
+.StakeMenu-Input-Input {
+  color: rgb(195, 197, 203);
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background-color: rgb(33, 36, 41);
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  appearance: textfield;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0.75rem 0.75rem 0.75rem 1rem;
+  box-sizing: border-box;
+}
+
+.StakeMenu-Input-Token {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.StakeMenu-Logo {
+  max-height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.StakeMenu-Button-Container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.StakeMenu-Button {
+  min-width: 60%;
+  position: relative;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(195, 197, 203);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  border: 2px solid #453B88;
+  background-color: #453B88;
+  outline: none;
+}
+
+.StakeMenu-Button.Left {
+  left: 1.5rem;
+}
+
+.StakeMenu-Button.Right {
+  right: 1.5rem;
+}
+
+.Active {
+  z-index: 10;
+}
+
+.Disabled {
+  background-color: rgb(33, 36, 41);
+  z-index: 0;
+}
+
+.StakeMenu-Current {
+  padding: 1rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+.StakeMenu-Send {
+  margin-top: 1rem;
+  min-width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #453B88;
+  outline: none;
+  border: none;
+  color: rgb(195, 197, 203);
+}
+
+.StakeMenu-Send:disabled {
+  opacity: 0.5;
+}
+
+.StakeMenu-Send:active {
+  background-color: #292351;
+}
