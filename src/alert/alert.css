@@ -1,0 +1,31 @@
+.Alert-Container {
+  width: 75%;
+  max-width: 420px;
+  position: absolute;
+  padding-bottom: 1rem;
+  bottom: 0;
+  color: rgb(195, 197, 203);
+}
+
+.Alert-Alert {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  background-color: rgb(33, 36, 41);
+}
+
+.Warning {
+  border: 2px solid #cf6679;
+}
+
+.Success {
+  border: 2px solid #453b88;
+}
+
+.Alert-Alert > a {
+  color: rgb(195, 197, 203);
+}
+
+.Alert-Alert > a:visited {
+  color: rgb(195, 197, 203);
+}

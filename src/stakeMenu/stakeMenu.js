@@ -1,12 +1,14 @@
 import React from "react";
 import "./stakeMenu.css";
 import logo from "../assets/cfx_logo.svg";
-import {checkBalance} from "../assets/blockchain"
+import { checkBalance, sendTransaction } from "../assets/blockchain";
 
-const StakeMenu = ({ connected }) => {
+const StakeMenu = ({ connected, setTx, chainID }) => {
   const [deposit, setDeposit] = React.useState(true);
   const [value, setValue] = React.useState("");
+  const [balance, setBalance] = React.useState("0.0");
   const [disabled, setDisabled] = React.useState(true);
+  const [refresh, triggerRefresh] = React.useState(false);
 
   const filterValue = (event) => {
     const newValue = event.target.value;
@@ -26,11 +28,24 @@ const StakeMenu = ({ connected }) => {
 
   React.useEffect(() => {
     if (connected.value) {
-      checkBalance(window.confluxJS.provider, window.conflux.selectedAddress)
+      checkBalance(window.conflux, window.conflux.selectedAddress).then((res) =>
+        setBalance(String(res))
+      );
     }
-  }, [connected.value])
+  }, [connected.value, refresh, chainID]);
 
-  // const buttonClick = await sendTransaction(window.conflux, value, deposit);
+  const buttonClick = async () => {
+    setDisabled(true);
+    const receipt = await sendTransaction(
+      window.conflux,
+      deposit ? "deposit" : "withdraw",
+      value
+    );
+    setTx(receipt);
+    setValue("")
+    triggerRefresh(!refresh);
+    setDisabled(false);
+  };
 
   return (
     <div className="StakeMenu">
@@ -49,7 +64,7 @@ const StakeMenu = ({ connected }) => {
           </div>
         </div>
       </div>
-      <div className="StakeMenu-Current">Current Staked: {0.0}</div>
+      <div className="StakeMenu-Current">Currently Staked: {balance}</div>
       <div className="StakeMenu-Button-Container">
         <button
           className={`StakeMenu-Button Left ${deposit ? "Active" : "Disabled"}`}
@@ -69,11 +84,12 @@ const StakeMenu = ({ connected }) => {
       <button
         className="StakeMenu-Send"
         disabled={!(!disabled && connected.value)}
+        onClick={buttonClick}
       >
         Send Transaction
       </button>
     </div>
   );
-}
+};
 
 export default StakeMenu;
