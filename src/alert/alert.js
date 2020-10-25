@@ -11,17 +11,28 @@ const Alert = ({ chainID, tx }) => {
   React.useEffect(() => {
     setActive({ warn: false, tx: !!tx });
 
-    setTimeout(() =>
-      setActive((prev) => {
-        return {...prev, tx: false }
-      }), 10000);
+    setTimeout(
+      () =>
+        setActive((prev) => {
+          return { ...prev, tx: false };
+        }),
+      10000
+    );
   }, [tx]);
+
+  const clear = () => {
+    setActive({ warn: false, tx: false });
+    console.log("here");
+  };
 
   return (
     <div className="Alert-Container">
       {active.warn && (
         <div className="Alert-Alert Warning">
-          Note: Staking balance is unavailable on Oceanus
+          <div>Staking balance is unavailable on Oceanus</div>
+          <div class="close" onClick={clear}>
+            &times;
+          </div>
         </div>
       )}
       {active.tx && (
@@ -33,6 +44,9 @@ const Alert = ({ chainID, tx }) => {
           >
             View transaction on Confluxscan
           </a>
+          <div class="close" onClick={clear}>
+            &times;
+          </div>
         </div>
       )}
     </div>
