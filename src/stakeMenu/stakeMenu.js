@@ -1,6 +1,6 @@
 import React from "react";
 import "./stakeMenu.css";
-import logo from "../assets/cfx_logo.svg";
+import logo from "../assets/cfx_logo.jpg";
 import { checkBalance, sendTransaction } from "../assets/blockchain";
 
 const StakeMenu = ({ connected, setTx, chainID }) => {

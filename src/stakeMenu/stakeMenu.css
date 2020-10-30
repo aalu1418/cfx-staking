@@ -57,6 +57,8 @@
 .StakeMenu-Logo {
   max-height: 2rem;
   margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 .StakeMenu-Button-Container {
@@ -78,6 +80,7 @@
   border: 2px solid #453B88;
   background-color: #453B88;
   outline: none;
+  cursor: pointer;
 }
 
 .StakeMenu-Button.Left {
@@ -114,10 +117,12 @@
   outline: none;
   border: none;
   color: rgb(195, 197, 203);
+  cursor: pointer;
 }
 
 .StakeMenu-Send:disabled {
   opacity: 0.5;
+  cursor:default;
 }
 
 .StakeMenu-Send:active {
