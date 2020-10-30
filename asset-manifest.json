@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cfx-staking/static/css/main.3ea06d5a.chunk.css",
-    "main.js": "/cfx-staking/static/js/main.70995b7e.chunk.js",
-    "main.js.map": "/cfx-staking/static/js/main.70995b7e.chunk.js.map",
+    "main.css": "/cfx-staking/static/css/main.5dd31a68.chunk.css",
+    "main.js": "/cfx-staking/static/js/main.86770520.chunk.js",
+    "main.js.map": "/cfx-staking/static/js/main.86770520.chunk.js.map",
     "runtime-main.js": "/cfx-staking/static/js/runtime-main.d73847ff.js",
     "runtime-main.js.map": "/cfx-staking/static/js/runtime-main.d73847ff.js.map",
     "static/js/2.5f5d41cc.chunk.js": "/cfx-staking/static/js/2.5f5d41cc.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.8f9daee6.chunk.js": "/cfx-staking/static/js/3.8f9daee6.chunk.js",
     "static/js/3.8f9daee6.chunk.js.map": "/cfx-staking/static/js/3.8f9daee6.chunk.js.map",
     "index.html": "/cfx-staking/index.html",
-    "static/css/main.3ea06d5a.chunk.css.map": "/cfx-staking/static/css/main.3ea06d5a.chunk.css.map",
+    "static/css/main.5dd31a68.chunk.css.map": "/cfx-staking/static/css/main.5dd31a68.chunk.css.map",
     "static/js/2.5f5d41cc.chunk.js.LICENSE.txt": "/cfx-staking/static/js/2.5f5d41cc.chunk.js.LICENSE.txt",
-    "static/media/cfx_logo.f0e157f6.svg": "/cfx-staking/static/media/cfx_logo.f0e157f6.svg"
+    "static/media/cfx_logo.1c4567c4.jpg": "/cfx-staking/static/media/cfx_logo.1c4567c4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d73847ff.js",
     "static/js/2.5f5d41cc.chunk.js",
-    "static/css/main.3ea06d5a.chunk.css",
-    "static/js/main.70995b7e.chunk.js"
+    "static/css/main.5dd31a68.chunk.css",
+    "static/js/main.86770520.chunk.js"
   ]
 }
