@@ -40,7 +40,7 @@ const Alert = ({ chainID, tx }) => {
           <a
             href={`https://${
               Number(window.conflux.networkVersion) === 1 ? "testnet." : ""
-            }confluxscan.io/transactionsdetail/${tx}`}
+            }confluxscan.io/transaction/${tx}`}
           >
             View transaction on Confluxscan
           </a>
